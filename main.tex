@@ -180,18 +180,18 @@ When you create your ``ref.bib'' file, don't forget to follow the standards for 
 
 \section{PROBLEM SOLUTION}
 
-Since the main problem faced is an anti-theft system that fits the needs and budget of a college student, a small system that fits these nessecities is needed. Our solution to this problem is to design and build an anti-theft system to fulfill this need. This solution will consist of building, designing, coding, and testing a vault-type structure and corresponding anti-theft system that is compact enough to fit into a college dorm room while also providing enough room to fit several personal items and being economically feasible for students.
-In order to arrive at our solution, we first approached our problem by brainstorming potential lock, vault, or anti-theft systems and the application of said system. Through this deliberation, we decided that a small vault-like system would make the most sense for the needs of a college student. After determining the application of our solution, we began the design process of how the system would work and a rough plan of how the setup would look.
-As mentioned above in the features section, our anti-theft system will consist of several mechanisms, sensors, and features to achieve out solution. First, a keyword will be spoken into the Circuit Playground Express microphone to allow for access to the next steps of opening the vault. A button combination will then be needed in order to unlock the vault door while, simaltaneously, a correct color idenification must be detected by the color sensor. If the correct sequence and color are present, this will activate two servos that will let the door be opened, giving access to contents inside. In addition to this, the Circuit Playground Express will be used to monitor whether or not the correct information was entered. If the incorrect information is given, an alarm will be activated to alert when someone is trying to break into the vault.
+Since the main problem faced is an anti-theft system that fits the needs and budget of a college student, a small system that fits these necessities is needed. Our solution to this problem is to design and build an anti-theft system to fulfill this need. This solution will consist of building, designing, coding, and testing a vault-type structure and corresponding anti-theft system that is compact enough to fit into a college dorm room while also providing enough room to fit several personal items and being economically feasible for students.
+In order to arrive at our solution, we first approached our problem by brainstorming potential lock, vault, or anti-theft systems and the application of the said system. Through this deliberation, we decided that a small vault-like system would make the most sense for the needs of a college student. After determining the application of our solution, we began the design process of how the system would work and a rough plan of how the setup would look.
+As mentioned above in the features section, our anti-theft system will consist of several mechanisms, sensors, and features to achieve our solution. First, a keyword will be spoken into the Circuit Playground Express microphone to allow for access to the next steps of opening the vault. A button combination will then be needed in order to unlock the vault door while, simultaneously, a correct color identification must be detected by the color sensor. If the correct sequence and color are present, this will activate two servos that will let the door be opened, giving access to contents inside. In addition to this, the Circuit Playground Express will be used to monitor whether or not the correct information was entered. If incorrect information is given, an alarm will be activated to alert when someone is trying to break into the vault.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=4.5in]{cpx01.jpg}
+\includegraphics[width=4.5in]{Prop1.jpg}
 \caption{Anti-Theft System Design}
 \label{fig:Prop1}
 \end{figure}
 
-As shown in Figure \ref{fig:Prop1}, the general layout of the components will have the Circuit Playground Express located in the middle of the vault door. Since the Express provides feed back, accepts vocal and visual inputs, and needs to be in close proximity to external sensors, this is the most logical placement. The combination buttons will be located underneath the Express also for easy access to the user. The second image in Figure \ref{fig:Prop1} shows the configuration of the vault door with the servo actuators located in the side of the door compared to the locations of the Express and buttons. Finally, in the last Figure \ref{fig:Prop1} image, the inside of the vault will have two spaces to store personal items with a removable shelf for larger items. Although the final product would be constructed out of metal, for ease this prototype will be constructed out of wood.
+As shown in Figure \ref{fig:Prop1}, the general layout of the components will have the Circuit Playground Express located in the middle of the vault door. Since the Express provides feedback, accepts vocal and visual inputs, and needs to be in close proximity to external sensors, this is the most logical placement. The combination buttons will be located underneath the Express also for easy access to the user. The second image in Figure \ref{fig:Prop1} shows the configuration of the vault door with the servo actuators located in the side of the door compared to the locations of the Express and buttons. Finally, in the last Figure \ref{fig:Prop1} image, the inside of the vault will have two spaces to store personal items with a removable shelf for larger items. Although the final product would be constructed out of metal, for ease, this prototype will be constructed out of wood.
 
 \begin{table}[ht]
   \caption{Parts Requested}
@@ -220,42 +220,9 @@ As shown in Figure \ref{fig:Prop1}, the general layout of the components will ha
   \end{tabular}
   \end{center}
   \end{table}
-As shown above in Table \ref{table:parts_list}, this is the list of parts we are requesting to complete our solution to the anti-theft system problem. Although this should cover the extra sensors and technology we need, this can still be regarded as a pelimenary list. Altough the exact about of wood needed at this time is unknown, vault building materials are added to the table to indicate the request for these materials.  
+As shown above in Table \ref{table:parts_list}, this is the list of parts we are requesting to complete our solution to the anti-theft system problem. Although this should cover the extra sensors and technology we need, this can still be regarded as a preliminary list. Although the exact about of wood needed at this time is unknown, vault building materials are added to the table to indicate the request for these materials.  
 
-why solves problem
-referance
-code?
-
-
-Finally, you can also include any pseudo code or any code snippets you have gathered so far.  This is not required, but if you found some starter code or came up with some ideas for the code, put it here. If you want to embed code into \LaTeX, you can use the example below on how to do this in \LaTeX.
-
-\begin{lstlisting}[language=Arduino]
-#include <Adafruit_CircuitPlayground.h>
-
-void setup() {
-  CircuitPlayground.begin();
-}
-
-void loop() {
-  CircuitPlayground.clearPixels();
-
-  delay(500);
-
-  CircuitPlayground.setPixelColor(0, 255,   0,   0);
-  CircuitPlayground.setPixelColor(1, 128, 128,   0);
-  CircuitPlayground.setPixelColor(2,   0, 255,   0);
-  CircuitPlayground.setPixelColor(3,   0, 128, 128);
-  CircuitPlayground.setPixelColor(4,   0,   0, 255);
-  
-  CircuitPlayground.setPixelColor(5, 0xFF0000);
-  CircuitPlayground.setPixelColor(6, 0x808000);
-  CircuitPlayground.setPixelColor(7, 0x00FF00);
-  CircuitPlayground.setPixelColor(8, 0x008080);
-  CircuitPlayground.setPixelColor(9, 0x0000FF);
- 
-  delay(5000);
-}
-\end{lstlisting}
+Although we do not have any written code yet, important code that we will have to look for is concerning the microphone input, button inputs, color sensing, servo operation, and alarm capabilities.
 
 \section{CONCLUSION}
 Finally, wrap up your proposal. This only needs to be one or two paragraphs, but it should conclude with what you plan to do and the why and how. Yes, this may seem repetitive, but that is intentional. Do not forget to update your references as those will appear below in a seperate page.
