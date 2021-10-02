@@ -155,19 +155,26 @@ The abstract is a summary of your proposal. In general, your abstract should hav
 While the abstract and introduction may seem like it is similar, remember that your abstract should have enough information to stand on its own. The introduction is really the actual start to your proposal. Here you should introduce the project, the people involved and give a short introduction to the why you are doing this. This should be 1-3 paragraphs.
 
 \section{FEATURES}
-Your Features section must include a listing of at least three key features that makes your project unique. Each item needs to be backed up with a description of what it will do and why. A listing of just three items is not enough, you need to describe what those features are and why your group feels they are needed. For that reason your features should have a paragraph for each key item that describes what that key feature is. A key feature should be something that is significant to your project. For example, a key feature an autopilot system is the ability to be able to set an altitude and the autopilot will automatically set the airspeed. That is a significant feature that has a large impact on that system.
+The project will have four main components supported by the code- a button for user input, a color sensor to show if the user was correct or incorrect in their action, a servo that will open the vault door if the user is successful, an an alert system that will set off a noise if the user fails.
 
 Alert System:
-The alert system will be programmed to set off a noise when a mistake is made. This is to simulate an alarm that alerts security of the robber's attempt to break into the vault. This will utilize the speaker on the Circuit Playground Express. When a correct choice is made, the alert will not sound off. 
+The alert system will be programmed to set off a noise when a mistake is made. This is to simulate an alarm that alerts security of the robber's attempt to break into the vault. 
+This will utilize the speaker on the Circuit Playground Express. When a correct choice is made, the alert will not sound off.
+The alert system will work in tandem with the color sensor.
 
 Button:
-A button will be used to work with the mechanism. The button will be programmed with the circuilt playground express to allow for user input when unlocking the mechanism. It will then connect to the alert system or door servo based on whether the unlocking mechanism fails or succeeds.
+A button will be used to work with the mechanism. The button will be programmed with the circuilt playground express to allow for user input when unlocking the mechanism.
+It will then connect to the alert system or door servo based on whether the unlocking mechanism fails or succeeds.
 
-Door's Servo:
-The servo for the door will open once the lock has been successfully unlocked. The servo will activate and push the vault door open. This is to ensure that bank workers would still be able to access the vault while being locked when the mechanism has not been successfully unlocked.
+Vault Servo:
+The servo for the door will open once the lock has been successfully unlocked. The servo will activate and push the vault door open.
+This is to ensure that bank workers would still be able to access the vault while being locked when the mechanism has not been successfully unlocked.
+The vault will open based on button inputs by the user. The color system will also act alongside the vault servo.
 
 Color Sensor:
-The color sensor will be utilized to change color based on the choices made by the system tester. If a mistake is made and the alert sounds, it will light up red. It will turn green if the system is being operated properly.
+The color sensor will be utilized to change color based on the choices made by the system tester. If a mistake is made and the alert sounds, it will light up red.
+It will turn green if the system is being operated properly.
+The color sensor will work with the alert system (speakers) and vault servo, causing different effects with the mechanism depending on the user's input.
 
 % Below is an example of inserting an image.  Not that LaTex
 % will determine the best location for the image.  Make sure
